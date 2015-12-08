@@ -12,10 +12,11 @@ public class SchedulesDirectException extends IOException {
     private final BaseResponse response;
 
     public SchedulesDirectException(BaseResponse response, String url) {
-        super(""+response);
+        super("" + response);
         this.url = url;
-        this.response=response;
+        this.response = response;
     }
+
     public BaseResponse getResponse() {
         return response;
     }
